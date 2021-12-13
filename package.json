@@ -2,8 +2,10 @@
   "name": "coding-challenges",
   "version": "1.0.0",
   "description": "Coding challenges",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests",
+    "check:eslint": "esw --ext .js ./"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/Jarith/coding-challenges/issues"
   },
-  "homepage": "https://github.com/Jarith/coding-challenges#readme"
+  "homepage": "https://github.com/Jarith/coding-challenges#readme",
+  "devDependencies": {
+    "eslint": "8.4.1",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-jest": "25.3.0",
+    "eslint-watch": "8.0.0",
+    "jest": "27.4.4"
+  }
 }
